@@ -29,6 +29,7 @@ const questions = [
     type: "list",
     message: "Chose your licence",
     choices: ["MIT", "Other", "GPlv2", "Apache"],
+    name: "licence",
   },
   {
     type: "input",
@@ -49,9 +50,8 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-  inquirer.prompt(questions).then((inquirerResponse) => {
-    console.log("Please wait while generating readme file");
-    writeToFile("README.md", generateMarkdown({ ...inquirerResponse }));
+  inquirer.prompt(questions).then((response) => {
+    writeToFile("test.txt", generateMarkdown({ ...response }));
   });
 }
 
