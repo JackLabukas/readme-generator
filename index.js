@@ -51,7 +51,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
   inquirer.prompt(questions).then((response) => {
-    writeToFile("test.txt", generateMarkdown({ ...response }));
+    writeToFile("README.md", generateMarkdown({ ...response }));
   });
 }
 
