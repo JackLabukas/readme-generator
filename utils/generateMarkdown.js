@@ -27,6 +27,4 @@ function generateMarkdown(data) {
   `;
 }
 
-// function generateLicence
-
 module.exports = generateMarkdown;
