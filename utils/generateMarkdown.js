@@ -10,14 +10,18 @@ function generateMarkdown(data) {
   \n
   \n
   \n##Licence
-  \n${data.license}
+  \n${data.licence}
   \n
   \n
   \n##Contributors
-  \n${data.contributors}
+  \n${data.contribute}
   \n
   \n##How to test this application
   \n${data.test}
+  \n
+  \n
+  \n Any questions? Please email me at:
+  \n ${data.questions}
   
   
   `;
